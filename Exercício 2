@@ -1,0 +1,306 @@
+programa
+{
+	
+	inclua biblioteca Util --> u
+
+     funcao Volta_No_Sol()
+     {
+     	
+     //variáveis
+        
+     real mercurio = 0.2408467
+
+     real venus = 0.61519726
+
+     real terra = 1.0
+
+     real marte = 1.8808158
+
+     real jupiter = 11.862615
+
+     real urano = 84.016846
+
+     real netuno = 164.79132
+
+     real dias_ano = 365.25
+
+     //respostas
+        
+     escreva("Os dias para dar uma volta no Sol em cada planeta é:\n")
+
+     escreva("Mercúrio: ", mercurio * dias_ano, " dias\n")
+
+
+     escreva("Vênus: ", venus * dias_ano, " dias\n")
+
+
+     escreva("Terra: ", terra * dias_ano, " dias\n")
+
+
+     escreva("Marte: ", marte * dias_ano, " dias\n")
+
+
+     escreva("Júpiter: ", jupiter * dias_ano, " dias\n")
+
+
+     escreva("Urano: ", urano * dias_ano, " dias\n")
+
+
+     escreva("Netuno: ", netuno * dias_ano, " dias\n")
+     
+     }
+	
+	funcao Idade_Em_Mercurio()
+	{
+
+	//variável e pergunta
+
+     inteiro anos
+
+     escreva("Digite sua idade: ")
+
+     leia(anos)
+
+     //variáveis
+
+     inteiro segundos_ano = 31557600
+
+
+     inteiro segundos = anos * segundos_ano
+
+
+     inteiro idade_terra = segundos / segundos_ano
+
+
+     real mercurio = 0.2408467
+
+
+     real idade_mercurio = idade_terra / mercurio
+
+
+     //resposta
+        
+     escreva("Sua idade em Mercúrio é ", idade_mercurio, " anos.\n")
+		
+	}
+
+     funcao Idade_Em_Planetas()
+     {
+     	
+     //variáveis e perguntas
+
+     inteiro anos
+
+     cadeia planeta
+
+     escreva("Coloque sua idade: ")
+
+     leia(anos)
+
+     escreva("Escreva o nome do planeta: ")
+
+     leia(planeta)
+
+
+     //vendo qual planeta é
+       
+     real periodo = 1.0
+
+
+     se (planeta == "Mercurio")
+     {
+
+     periodo = 0.2408467
+       
+     }
+     se (planeta == "Venus")
+     { 
+    	   	
+     periodo = 0.61519726
+
+     }
+     se (planeta == "Terra")
+     {
+            
+     periodo = 1.0
+
+        
+     }   
+     senao se (planeta == "Marte")	
+     {
+     
+     periodo = 1.8808158
+
+     }
+     se (planeta == "Jupiter")
+     {
+     
+     periodo = 11.862615
+
+     }
+      se (planeta == "Urano")
+     {
+     
+     periodo = 84.016846
+
+     }
+     se (planeta == "Netuno")
+     {
+
+     periodo = 164.79132
+
+     }
+     senao
+     {
+
+     escreva("Planeta não encontrado utilizarei a Terra.\n")
+
+     periodo = 1.0
+
+     }
+
+     //variáveis
+        
+     inteiro segundos_ano = 31557600
+
+     inteiro segundos = anos * segundos_ano
+
+
+     inteiro idade_terra = segundos / segundos_ano
+
+
+     real idade_planeta = idade_terra / periodo
+
+     //resposta
+
+     escreva("Sua idade em ", planeta, " é ", idade_planeta, " anos.\n")
+     	
+     }
+
+     funcao Idade_Jovem_Em_Planeta()
+     {
+
+     //variáveis e perguntas
+     
+     inteiro anos
+
+     escreva("Coloqu a sua idade sua idade: ")
+
+     leia(anos)
+
+     //variáveis
+     
+     inteiro segundos_ano = 31557600
+
+
+     inteiro segundos = anos * segundos_ano
+
+
+     inteiro idade_terra = segundos / segundos_ano
+
+
+     real mercurio = idade_terra / 0.2408467
+
+
+     real venus = idade_terra / 0.61519726
+
+
+     real terra = idade_terra / 1.0
+
+
+     real marte = idade_terra / 1.8808158
+
+
+     real jupiter = idade_terra / 11.862615
+
+
+     real urano = idade_terra / 84.016846
+
+
+     real netuno = idade_terra / 164.79132
+
+
+     real menor = mercurio
+
+     cadeia planeta_mais_jovem = "Mercúrio"
+
+     //vendo qual é o planeta menor
+     
+     se (venus < menor)
+     {
+
+     menor = venus
+
+     planeta_mais_jovem = "Vênus"
+
+     }
+     se (terra < menor)
+     {
+
+     menor = terra
+
+     planeta_mais_jovem = "Terra"
+
+     }
+     se (marte < menor)
+     {
+
+     menor = marte
+
+     planeta_mais_jovem = "Marte"
+
+     }
+     se (jupiter < menor)
+     {
+
+     menor = jupiter
+
+     planeta_mais_jovem = "Júpiter"
+
+     }
+     se (urano < menor)
+     {
+
+     menor = urano
+
+     planeta_mais_jovem = "Urano"
+
+     }
+     se (netuno < menor)
+     {
+
+      menor = netuno
+
+     planeta_mais_jovem = "Netuno"
+
+     }
+     //resposta
+     
+     escreva("Você seria mais jovem em ", planeta_mais_jovem, " com ", menor, " anos.\n")
+     	
+     }
+		
+	funcao inicio()
+	{
+	 
+	 //letra a
+      Volta_No_Sol()
+      u.aguarde(20000)
+      limpa()
+
+      //letra b
+      Idade_Em_Mercurio()
+      u.aguarde(20000)
+      limpa()
+
+      //letra c
+      Idade_Em_Planetas()
+      u.aguarde(20000)
+      limpa()
+
+      //letra d
+      Idade_Jovem_Em_Planeta()
+      u.aguarde(20000)
+      
+	}
+}
