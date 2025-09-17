@@ -1,0 +1,57 @@
+programa
+{
+
+     funcao Tintas()
+     {
+
+     //variáveis
+     	
+     inteiro area
+     
+     inteiro litros
+      
+     real preco_total
+      
+     inteiro latas
+
+     //pergunta
+     
+     escreva("Digite o tamanho da área a ser pintada (em m²): ")
+     
+     leia(area)
+
+     //resolução
+     
+     litros = area / 3
+
+   
+     se (litros % 18 == 0)
+     {
+     	
+     latas = litros / 18
+            
+     }
+     senao
+     {
+     	
+     latas = (litros / 18) + 1
+       
+     }
+
+     preco_total = latas * 480
+
+     //respostas
+    
+     escreva("Quantidade de latas necessárias: ", latas, "\n")
+     
+     escreva("Preço total: R$", preco_total, "\n")	
+
+     }
+	
+	   funcao inicio()
+	   {
+
+		 Tintas()
+
+  	 }
+}
