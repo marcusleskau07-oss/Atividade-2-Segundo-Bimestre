@@ -1,0 +1,145 @@
+programa
+{
+	inclua biblioteca Util --> u
+	
+	funcao Horas_Ano()
+	{
+	
+	//variáveis
+	
+	inteiro Horas_dias	= 24
+
+     inteiro Dias_Anos  = 365
+
+     inteiro Hora_Ano = 365 * 24 
+
+     //resposta
+     
+	escreva("Em um ano tem ", Hora_Ano, " horas." )
+	
+	}
+
+	funcao Decada_Minutos()
+	{
+	
+	//variáveis
+	
+	inteiro Minutos = 60	
+	
+	inteiro Horas = 24 * 60
+	
+	inteiro Decadas = 10
+
+	inteiro Ano = Horas * 365
+     
+	inteiro Minutos_Decadas = Ano * 10
+
+
+     //rseposta
+	
+	escreva("Em uma decada á ", Minutos_Decadas, " minutos.")
+	
+	}
+
+	funcao Idade_Segundos()
+	{
+		
+	//variável e pergunta 
+	
+      inteiro Idade = 0
+      
+      escreva("Quantos anos você tem? ")
+     
+      leia(Idade)
+
+      //variáveis
+      
+      inteiro Dias = 365
+      
+      inteiro Horas = 24
+      
+      inteiro Minutos = Horas * 60
+      
+      inteiro Ano = Minutos * 60
+      
+      inteiro Segundos = Dias * Ano
+     
+      inteiro Valor = Idade * Segundos
+      
+      //resposta
+
+	 escreva("A sua idade em segundos é ", Valor)
+	
+	}
+
+	funcao Chocolate()
+	{
+	
+	//variáveis
+	
+	inteiro Dia = 365
+	
+	inteiro Chocolates = 1
+
+	inteiro Idade_Media_De_Mortalidade = 76
+
+	inteiro Anos = Idade_Media_De_Mortalidade - 15
+
+	inteiro Chocolates_Total = Anos * Idade_Media_De_Mortalidade
+
+     //resposta
+     
+	escreva("Eu pretendo comer ", Chocolates, " por dia e considerando a idade média de mortalide do brasileiro e diminuindo a minha idade, eu vou comer ", Chocolates_Total, " chocolates.")
+
+	}
+
+     funcao Segundos_Anos()
+     {
+     
+     //variáveis 
+	
+    inteiro Segundos = 977000000
+    
+    inteiro Minutos = Segundos / 60
+    
+    inteiro Horas = Minutos / 60
+    
+    inteiro Dia = Horas / 24 
+    
+    inteiro Ano = Dia / 365
+    
+    //resposta
+
+	 escreva("Se você tem 977 milhões de segundos a sua idade em anos é ", Ano, " anos.")
+	
+     }
+	
+	funcao inicio()
+	{
+     //letra a
+     Horas_Ano()
+     u.aguarde(20000)
+     limpa()
+     
+     // letra b
+     Decada_Minutos()
+     u.aguarde(20000)
+     limpa()
+     
+     // letra c
+     Idade_Segundos()
+     u.aguarde(20000)
+     limpa()
+     
+     //letra d
+     Chocolate()
+     u.aguarde(20000)
+     limpa()
+     
+     //letra e
+     Segundos_Anos()
+	u.aguarde(20000)
+    
+     
+	}
+}
