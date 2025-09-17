@@ -1,0 +1,65 @@
+programa
+{
+	   inclua biblioteca Util --> u
+	
+	   inclua biblioteca Matematica --> m
+
+     funcao Lados_Prontos()
+     {
+
+     //variáveis
+     	
+     real lado1 = 11.5
+       
+     real lado2 = 6.3
+
+     // Calculando a diagonal
+        
+     real diagonal = m.raiz(lado1 * lado1 + lado2 * lado2, 2)
+
+     //resposta
+
+     escreva("A quantidade mínima de fio necessária é ", diagonal, " metros.\n")
+     
+     }
+
+     funcao Lados_Escolha()
+     {
+
+     //vaiáveis e peguntas
+     	
+     real lado1
+     
+     real lado2
+
+     escreva("Digite o comprimento do primeiro lado (em metros): ")
+     
+     leia(lado1)
+
+     escreva("Digite o comprimento do segundo lado (em metros): ")
+     
+     leia(lado2)
+
+     real diagonal = m.raiz(lado1 * lado1 + lado2 * lado2, 2)
+     
+     //resposta
+     
+     escreva("A quantidade mínima de fio necessária é: ", diagonal, " metros.\n")
+     
+     }
+
+	   funcao inicio()
+	   {
+	
+	   //letra a
+     Lados_Prontos()
+     u.aguarde(20000)
+     limpa()
+
+	   //letra b
+     Lados_Escolha()
+     u.aguarde(20000)
+     limpa()
+		
+	   }
+}
