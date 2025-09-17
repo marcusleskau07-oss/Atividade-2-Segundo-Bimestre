@@ -1,0 +1,63 @@
+programa
+{
+	
+    funcao Tabuas()
+    {
+    	
+    //variáveis
+   
+    inteiro tamanho_pedaco = 45
+
+    inteiro tabua3m = 300
+  
+    inteiro tabua4m = 400
+    
+    inteiro tabua5m = 500
+
+    //tábua de 3 metros
+    
+    inteiro qtd3 = tabua3m / tamanho_pedaco
+    
+    inteiro sobra3 = tabua3m % tamanho_pedaco
+    
+    //tábua de 4 metros
+     
+    inteiro qtd4 = tabua4m / tamanho_pedaco
+     
+    inteiro sobra4 = tabua4m % tamanho_pedaco
+
+    //tábua de 5 metros
+        
+    inteiro qtd5 = tabua5m / tamanho_pedaco
+        
+    inteiro sobra5 = tabua5m % tamanho_pedaco
+
+    //respostas
+        
+    escreva("Tábua de 3 metros:\n")
+        
+    escreva("  Pedaços possíveis: ", qtd3, "\n")
+    
+    escreva("  Sobra: ", sobra3, " cm\n\n")
+
+    escreva("Tábua de 4 metros:\n")
+    
+    escreva("  Pedaços possíveis: ", qtd4, "\n")
+        
+    escreva("  Sobra: ", sobra4, " cm\n\n")
+
+    escreva("Tábua de 5 metros:\n")
+    
+    escreva("  Pedaços possíveis: ", qtd5, "\n")
+    
+    escreva("  Sobra: ", sobra5, " cm\n")
+    
+    }
+
+    funcao inicio()
+    {
+    
+		Tabuas()
+		
+    }
+}
