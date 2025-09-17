@@ -1,0 +1,31 @@
+programa
+{
+	  funcao Soma_Idade()
+	  {
+
+     //variável e pergunta
+	
+     inteiro idade
+        
+     escreva("Digite a sua idade: ")
+        
+     leia(idade)
+
+
+     //soma de idade
+        
+     inteiro soma = (idade * (idade + 1)) / 2
+
+     //resposta
+        
+     escreva("A soma de todas as idades que você já teve é: ", soma, "\n")
+        
+	  }
+
+	  funcao inicio()
+	  {
+
+	  Soma_Idade()
+		
+	  }
+}
