@@ -1,0 +1,31 @@
+programa
+{
+	
+     funcao Tempo_Lido_Livro()
+     {
+
+     //variáveis
+     	
+     inteiro minutos_por_dia = 5
+        
+     inteiro dias_por_semana = 6
+        
+     inteiro semanas_por_ano = 52
+        
+     inteiro total_minutos = minutos_por_dia * dias_por_semana * semanas_por_ano
+        
+     real total_horas = total_minutos / 60.0
+
+     //resposta
+        
+     escreva("Tempo total de leitura em um ano: ", total_horas, " horas\n")
+     
+     }
+	
+	   funcao inicio()
+	   {
+	
+	   Tempo_Lido_Livro()
+		
+	   }
+}
