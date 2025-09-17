@@ -1,0 +1,45 @@
+programa
+{
+
+     funcao Tempo_De_Download()
+     {
+
+     //variáveis
+     	
+     real tamanho_MB
+     
+     real velocidade_Mbps
+     
+     real tempo_segundos
+     
+     real tempo_minutos
+
+     //perguntas
+        
+     escreva("Digite o tamanho do arquivo (em MB): ")
+     
+     leia(tamanho_MB)
+        
+     escreva("Digite a velocidade da Internet (em Mbps): ")
+     
+     leia(velocidade_Mbps)
+
+     //resolução
+        
+     tempo_segundos = (tamanho_MB * 8) / velocidade_Mbps
+        
+     tempo_minutos = tempo_segundos / 60
+
+     //resposta
+        
+     escreva("O tempo aproximado de download é: ", tempo_minutos, " minutos\n")
+     
+     }
+	
+	   funcao inicio()
+	   {
+
+	   Tempo_De_Download()
+		
+	   }
+}
