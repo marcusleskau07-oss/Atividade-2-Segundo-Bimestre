@@ -1,0 +1,31 @@
+programa
+{
+
+     funcao Tempo_Estudo()
+     {
+    
+     //variáveis
+
+     inteiro tempo_total = 100
+        
+     inteiro disciplinas = 6
+
+     inteiro tempo_por_disciplina = tempo_total / disciplinas
+
+     inteiro tempo_livre = tempo_total % disciplinas
+
+     //respostas
+
+     escreva("Cada disciplina: ", tempo_por_disciplina, " minutos\n")
+
+     escreva("Tempo livre: ", tempo_livre, " minutos\n")
+
+     }
+	
+	funcao inicio()
+	{
+     
+     Tempo_Estudo()
+     
+	}
+}
